@@ -31,13 +31,9 @@ def swirl(x, y, step):
 
 scrollphathd.set_brightness(0.8)
 
+sphd.write_string('arkenets        ')
+
 while True:
-    timestep = math.sin(time.time() / 18) * 1500
-
-    for x in range(0, scrollphathd.DISPLAY_WIDTH):
-        for y in range(0, scrollphathd.DISPLAY_HEIGHT):
-            v = swirl(x, y, timestep)
-            scrollphathd.pixel(x, y, v)
-
-    time.sleep(0.001)
-    scrollphathd.show()
+    sphd.show()
+    sphd.scroll(1)
+    time.sleep(0.05)

@@ -9,3 +9,4 @@ On local network, the raspi has a reserved IP address of ###.###.##.250
 
 ## rc.local
 '/etc/rc.local' has been modifed to start 'pulse.py' on boot.
+ 
