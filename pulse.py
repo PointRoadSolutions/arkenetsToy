@@ -31,9 +31,9 @@ def swirl(x, y, step):
 
 scrollphathd.set_brightness(0.8)
 
-sphd.write_string('arkenets        ')
+scrollphathd.write_string('arkenets        ')
 
 while True:
-    sphd.show()
-    sphd.scroll(1)
+    scrollphathd.show()
+    scrollphathd.scroll(1)
     time.sleep(0.05)
